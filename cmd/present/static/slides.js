@@ -402,6 +402,9 @@ function handleBodyKeyDown(event) {
   var inCode = event.target.classList.contains('code');
 
   switch (event.keyCode) {
+    case 82: // R
+      // Runs play on current slide
+      document.querySelector("article.current button[class='run']").click();
     case 78: // 'N' opens presenter notes window
       if (!inCode && notesEnabled) toggleNotesWindow();
       break;
