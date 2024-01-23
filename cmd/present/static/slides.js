@@ -405,12 +405,15 @@ function handleBodyKeyDown(event) {
     case 82: // R
       // Runs play on current slide
       document.querySelector("article.current button[class='run']").click();
+      break;
     case 75: // K
       // Kills play on current slide
       document.querySelector("article.current button[class='kill']").click();
+      break;
     case 67: // C
       // Closes play on current slide
       document.querySelector("article.current button[class='close']").click();
+      break;
     case 78: // 'N' opens presenter notes window
       if (!inCode && notesEnabled) toggleNotesWindow();
       break;
